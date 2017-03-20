@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="12"
+    android:orientation="horizontal">
+
+    <!-- First Row -->
+
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton00" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton01" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton02" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton03" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton04" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton05" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton06" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton07" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton08" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton09" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0010" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0011" android:onClick="flipimage"/>
+
+    <!-- Second Raw -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton10" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton11" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton12" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton13" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton14" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton15" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton16" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton17" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton18" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton19" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0110" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0111" android:onClick="flipimage"/>
+
+    <!-- Third Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton20" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton21" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton22" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton23" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton24" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton25" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton26" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton27" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton28" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton29" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0210" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0211" android:onClick="flipimage"/>
+
+    <!-- forth Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton30" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton31" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton32" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton33" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton34" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton35" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton36" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton37" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton38" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton39" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0310" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0311" android:onClick="flipimage"/>
+
+    <!-- fifth Raw -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton40" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton41" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton42" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton43" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton44" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton45" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton46" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton47" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton48" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton49" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0410" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0411" android:onClick="flipimage"/>
+
+    <!-- sixth Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton50" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton51" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton52" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton53" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton54" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton55" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton56" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton57" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton58" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton59" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0510" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0511" android:onClick="flipimage"/>
+
+
+    <!-- seventh Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton60" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton61" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton62" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton63" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton64" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton65" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton66" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton67" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton68" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton69" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0610" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0611" android:onClick="flipimage"/>
+
+    <!-- eightth Raw -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton70" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton71" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton72" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton73" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton74" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton75" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton76" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton77" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton78" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton79" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0710" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0711" android:onClick="flipimage"/>
+
+    <!-- ninth Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton80" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton81" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton82" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton83" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton84" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton85" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton86" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton87" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton88" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton89" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0810" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0811" android:onClick="flipimage"/>
+
+
+    <!-- tenth Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton90" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton91" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton92" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton93" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton94" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton95" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton96" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton97" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton98" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton99" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0910" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton0911" android:onClick="flipimage"/>
+
+
+    <!-- eleventh Raw -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton100" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton101" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton102" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton103" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton104" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton105" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton106" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton107" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton108" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton109" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton1010" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton1011" android:onClick="flipimage"/>
+
+
+    <!-- twelth Row -->
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton110" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton111" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton112" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton113" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton114" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton115" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton116" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton117" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton118" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton119" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton1110" android:onClick="flipimage"/>
+
+    <ImageButton android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/dead" android:id="@+id/imageButton1111" android:onClick="flipimage"/>
+
+
+    <Button
+        android:text="Reset"
+        android:layout_columnSpan="6"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:onClick="Reset"
+        android:id="@+id/Reset" />
+
+    <Button
+        android:text="Next"
+        android:layout_columnSpan="6"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:onClick="Next_Generation"
+        android:id="@+id/Next" />
+
+
+</GridLayout>
