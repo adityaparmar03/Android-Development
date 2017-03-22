@@ -24,117 +24,195 @@
         android:layout_height="wrap_content">
         <TextView
             android:text="Property Type :"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-
-            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvPropertyType"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textSize="16sp" />
+            />
 
         <Spinner
-            android:layout_width="150dp"
-            android:layout_height="30dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:id="@+id/spinnerpropertytype" />
 
     </LinearLayout>
 
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/street"
 
-            android:layout_marginTop="11dp"
-            android:hint="Street" />
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:text="Street:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvStreet"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/city"
-            android:hint="City"
-           />
+            android:id="@+id/street" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-                <TextView
-                    android:text="State :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:text="City:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvCity"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
 
-                    android:id="@+id/textView3"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="16sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+
+                android:id="@+id/city" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:text="State:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvState"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
 
                 <Spinner
-                    android:layout_width="210dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
 
                     android:id="@+id/state" />
 
         </LinearLayout>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
 
-            android:id="@+id/zip"
-            android:hint="Zip Code" />
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/propertyprice"
-            android:hint="Property Price" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-
-            android:id="@+id/downpayment"
-            android:hint="DownPayment"
-
-            android:ems="10" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-
-            android:id="@+id/rate"
-            android:hint="Annual Rate of Interest" />
 
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:weightSum="2">
+            <TextView
+                android:text="Zipcode:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvZipcode"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+
+                android:id="@+id/zip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:text="Property Price:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvPropertyPrice"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+
+                android:id="@+id/propertyprice"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:text="Downpayment:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvDownpayment"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+
+                android:id="@+id/downpayment"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:text="Annual Rate of Interest:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvrate"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:id="@+id/rate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
             <TextView
                 android:text="Number of Years :"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/tvterm"
-                android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
 
             <Spinner
-                android:layout_width="150dp"
-                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/spinnerterm" />
 
         </LinearLayout>
@@ -150,7 +228,7 @@
                 android:layout_weight="1"
 
                 android:id="@+id/bcalculate"
-                />
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
 
             <Button
                 android:text="Save"
@@ -158,6 +236,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/bsave"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 />
 
             <Button
@@ -166,6 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/bclear"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 />
 
         </LinearLayout>

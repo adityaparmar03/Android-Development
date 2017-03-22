@@ -303,39 +303,34 @@ public class CalculationViewFragment extends Fragment {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
+                        if(addressList != null) {
+                            if (!addressList.isEmpty()) {
+                                if (ID.Id == 0) {
+                                    handler.getWritableDatabase();
+                                    long k = handler.insertInfo(handler, Street, City, State, Zip, Propertytype, PropertyPrice, Downpayment, APR, Terms, MonthlyInstallment);
+                                    if (k > 0) {
+                                        Toast.makeText(getActivity(), "Calculation is successfully saved.", Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Toast.makeText(getActivity(), "Something went wrong, Try next time", Toast.LENGTH_LONG).show();
 
-                        if (!addressList.isEmpty()) {
-                            if(ID.Id == 0) {
-                                handler.getWritableDatabase();
-                                long k = handler.insertInfo(handler, Street, City, State, Zip, Propertytype, PropertyPrice, Downpayment, APR, Terms, MonthlyInstallment);
-                                if (k > 0) {
-                                    Toast.makeText(getActivity(), "Calculation is successfully saved.", Toast.LENGTH_LONG).show();
-                                }
-                                else
-                                {
-                                    Toast.makeText(getActivity(), "Something went wrong, Try next time", Toast.LENGTH_LONG).show();
+                                    }
+                                    handler.close();
+                                } else {
+                                    handler.getWritableDatabase();
 
+                                    long k = handler.update(handler, Street, City, State, Zip, Propertytype, PropertyPrice, Downpayment, APR, Terms, MonthlyInstallment);
+                                    if (k > 0) {
+                                        Toast.makeText(getActivity(), "Calculation is successfully updated.", Toast.LENGTH_LONG).show();
+                                    } else {
+                                        Toast.makeText(getActivity(), "Something went wrong, Try next time", Toast.LENGTH_LONG).show();
+
+                                    }
+                                    handler.close();
                                 }
-                                handler.close();
+                                //Log.d("Save", String.valueOf(k));
+                            } else {
+                                Toast.makeText(getActivity(), "Please enter Valid Address ", Toast.LENGTH_LONG).show();
                             }
-                            else
-                            {
-                                handler.getWritableDatabase();
-
-                                long k = handler.update(handler, Street, City, State, Zip, Propertytype, PropertyPrice, Downpayment, APR, Terms, MonthlyInstallment);
-                                if (k > 0) {
-                                    Toast.makeText(getActivity(), "Calculation is successfully updated.", Toast.LENGTH_LONG).show();
-                                }
-                                else
-                                {
-                                    Toast.makeText(getActivity(), "Something went wrong, Try next time", Toast.LENGTH_LONG).show();
-
-                                }
-                                handler.close();
-                            }
-                            //Log.d("Save", String.valueOf(k));
-                        } else {
-                            Toast.makeText(getActivity(), "Please enter Valid Address ", Toast.LENGTH_LONG).show();
                         }
                     }
 

@@ -192,24 +192,26 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
                     }
                 }
 
+                if(addressList != null) {
+                    if (!addressList.isEmpty()) {
 
-                if (!addressList.isEmpty()) {
+                        Address address = addressList.get(0);
+                        LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
 
-                    Address address = addressList.get(0);
-                    LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
-
-                    mMap.addMarker(new MarkerOptions().position(latLng));
-                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-
-
-                    builder.include(latLng);
+                        mMap.addMarker(new MarkerOptions().position(latLng));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 
 
+                        builder.include(latLng);
+
+
+                    }
                 }
 
 
             }
             if(details.length>0) {
+
                 LatLngBounds bounds = builder.build();
                 mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 150));
             }
