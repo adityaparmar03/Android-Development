@@ -5,5 +5,5 @@ package com.example.adityaparmar.mortgagecalculator;
  */
 
 public class ID {
-    static int Id;
+    static int Id=0;
 }

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -52,6 +53,7 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
 
 
             }});*/
+        ID.Id=0;
         return rootView;
     }
 
@@ -81,7 +83,7 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
 
 
 
-    public void opendialogbox(int i, final Marker marker){
+    public void opendialogbox(final int i, final Marker marker){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
 
         String str = "Property Type :"+details[i][5]+
@@ -106,7 +108,21 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
                 .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        marker.remove();
+
+                        DatabaseOperations databaseOperations = new DatabaseOperations(getActivity().getBaseContext(), TableData.TableInfo.DATABASE_NAME, null, 1);
+                        databaseOperations.getWritableDatabase();
+                        int ra = databaseOperations.delete(databaseOperations,Integer.parseInt(details[i][0]));
+                        if (ra>0)
+                        {
+                            marker.remove();
+                            Toast.makeText(getActivity(), "Calculation is successfully deleted.", Toast.LENGTH_LONG).show();
+
+                        }
+                        else
+                        {
+                            Toast.makeText(getActivity(), "Something went wrong, Try next time", Toast.LENGTH_LONG).show();
+
+                        }
                     }
                 })
                 .setNeutralButton("Edit",new DialogInterface.OnClickListener() {
@@ -114,7 +130,7 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
                     public void onClick(DialogInterface dialog, int id) {
                         android.app.FragmentManager fragmentManager = getFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.content_frame,new CalculationViewFragment()).commit();
-                        ID.Id=1;
+                        ID.Id=Integer.parseInt(details[i][0]);
 
                     }
                 })
@@ -152,58 +168,56 @@ public class MapsActivity extends Fragment implements GoogleMap.OnMarkerClickLis
 
 
         //int k;
-        for(k=0;k<2;k++){
+        if(details.length > 0) {
+            for (k = 0; k < details.length; k++) {
 
-            String locationName;
-
-
-            locationName= details[k][1]+","+details[k][2]+details[k][3]+details[k][4];
+                String locationName;
 
 
+                locationName = details[k][1] + "," + details[k][2] + ","+ details[k][3] + "," +details[k][4];
 
 
-            Geocoder geocoder = new Geocoder(getActivity());
-            List<Address> addressList = null;
+                Geocoder geocoder = new Geocoder(getActivity());
+                List<Address> addressList = null;
 
 
+                if (locationName != null || locationName != " ") {
+                    try {
 
-            if(locationName != null || locationName != " "){
-                try {
+                        addressList = geocoder.getFromLocationName(locationName, 1);
 
-                    addressList = geocoder.getFromLocationName (locationName, 1);
+                    } catch (IOException e) {
 
-                } catch (IOException e) {
-
-                    e.printStackTrace();
+                        e.printStackTrace();
+                    }
                 }
+
+
+                if (!addressList.isEmpty()) {
+
+                    Address address = addressList.get(0);
+                    LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+
+                    mMap.addMarker(new MarkerOptions().position(latLng));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+
+
+                    builder.include(latLng);
+
+
+                }
+
+
+            }
+            if(details.length>0) {
+                LatLngBounds bounds = builder.build();
+                mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 150));
             }
 
+            mMap.setOnMarkerClickListener(this);
+            //mMap.setOnMarkerClickListener();
 
-            if (addressList.get(0)!=null) {
-
-                Address address = addressList.get(0);
-                LatLng latLng = new LatLng(address.getLatitude(),address.getLongitude());
-
-                mMap.addMarker(new MarkerOptions().position(latLng));
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-
-
-                builder.include(latLng);
-
-
-
-            }
-
-            LatLngBounds bounds = builder.build();
-            mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 150));
         }
-
-
-
-        mMap.setOnMarkerClickListener(this);
-        //mMap.setOnMarkerClickListener();
-
-
 
 
     }

@@ -116,37 +116,55 @@
             android:id="@+id/rate"
             android:hint="Annual Rate of Interest" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
 
-            android:id="@+id/period"
-            android:hint="Number of years" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Number of Years :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:id="@+id/tvterm"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerterm" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
             <Button
                 android:text="Calculate"
-                android:layout_width="115dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
 
                 android:id="@+id/bcalculate"
                 />
 
             <Button
                 android:text="Save"
-                android:layout_width="115dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/bsave"
                 />
 
             <Button
                 android:text="New"
-                android:layout_width="115dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/bclear"
                 />
 
